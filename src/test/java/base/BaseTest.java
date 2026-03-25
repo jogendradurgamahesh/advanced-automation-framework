@@ -68,6 +68,8 @@ public class BaseTest {
 
 		DriverManager.setDriver(driver);
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		
+		 Thread.sleep(10000); // 10 seconds pause
 	}
 
 	@AfterMethod
