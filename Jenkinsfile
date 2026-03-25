@@ -70,7 +70,8 @@ pipeline {
         // 4️⃣ Copy report from container to Jenkins workspace
         stage('Copy Reports') {
             steps {
-                bat "docker cp %CONTAINER_NAME%:/app/reports ."
+               // bat "docker cp %CONTAINER_NAME%:/app/reports ."
+                 bat "docker run --name %CONTAINER_NAME% jogendramahesh/automation-test"
             }
         }
 
