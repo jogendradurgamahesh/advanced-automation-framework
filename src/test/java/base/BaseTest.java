@@ -23,6 +23,16 @@ public class BaseTest {
 	
 	  @BeforeMethod
 	    public void setup() {
+
+			  ChromeOptions options = new ChromeOptions();
+
+    // 🔥 Required for Docker
+    options.addArguments("--headless=new");
+    options.addArguments("--no-sandbox");
+    options.addArguments("--disable-dev-shm-usage");
+    options.addArguments("--disable-gpu");
+    options.addArguments("--window-size=1920,1080");
+			
 	        WebDriver driver = new ChromeDriver();
 	        DriverManager.setDriver(driver);
 	        driver.manage().window().maximize();
