@@ -33,9 +33,9 @@ public class BaseTest {
     options.addArguments("--disable-gpu");
     options.addArguments("--window-size=1920,1080");
 			
-	        WebDriver driver = new ChromeDriver();
+	        WebDriver driver = new ChromeDriver(options);
 	        DriverManager.setDriver(driver);
-	        driver.manage().window().maximize();
+	        // driver.manage().window().maximize();
 	        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 	    }
 
