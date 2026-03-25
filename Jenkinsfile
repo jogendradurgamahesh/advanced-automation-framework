@@ -63,15 +63,16 @@ pipeline {
         // 3️⃣ Run tests inside Docker container
         stage('Run Tests') {
             steps {
-                bat "docker run --name %CONTAINER_NAME% %IMAGE_NAME%"
+                //bat "docker run --name %CONTAINER_NAME% %IMAGE_NAME%"
+                 bat "docker run --name %CONTAINER_NAME% jogendramahesh/automation-test"
             }
         }
 
         // 4️⃣ Copy report from container to Jenkins workspace
         stage('Copy Reports') {
             steps {
-               // bat "docker cp %CONTAINER_NAME%:/app/reports ."
-                 bat "docker run --name %CONTAINER_NAME% jogendramahesh/automation-test"
+                bat "docker cp %CONTAINER_NAME%:/app/reports ."
+                 
             }
         }
 
