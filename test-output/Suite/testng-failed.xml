@@ -6,15 +6,13 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="tests.LoginTest">
+      <class name="tests.EndToEndTest">
         <methods>
           <include name="setup"/>
           <include name="tearDown"/>
-          <include name="cleanUp"/>
-          <include name="setUp"/>
-          <include name="loginTest"/>
+          <include name="fullFlowTest"/>
         </methods>
-      </class> <!-- tests.LoginTest -->
+      </class> <!-- tests.EndToEndTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

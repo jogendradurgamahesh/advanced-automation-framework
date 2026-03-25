@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/1/2</td>
+<td>Tests passed/Failed/Skipped:</td><td>1/0/2</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Mar 18 16:18:42 IST 2026</td>
+<td>Started on:</td><td>Wed Mar 25 10:43:46 IST 2026</td>
 </tr>
-<tr><td>Total time:</td><td>149 seconds (149497 ms)</td>
+<tr><td>Total time:</td><td>22 seconds (22004 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,56 +67,6 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td><b>Attribute(s)</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='tests.LoginTest.loginTest()'><b>loginTest</b><br>Test class: tests.LoginTest</td>
-<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
-	at tests.LoginTest.loginTest(LoginTest.java:29)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace57986233", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace57986233'><pre>java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1590)
-	at org.testng.Assert.assertTrue(Assert.java:57)
-	at org.testng.Assert.assertTrue(Assert.java:67)
-	at tests.LoginTest.loginTest(LoginTest.java:29)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:741)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>10</td>
-<td>tests.LoginTest@279fedbd</td></tr>
-</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -126,10 +76,10 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='tests.EndToEndTest.fullFlowTest()'><b>fullFlowTest</b><br>Test class: tests.EndToEndTest</td>
+<td title='tests.LoginTest.loginTest()'><b>loginTest</b><br>Test class: tests.LoginTest</td>
 <td></td>
-<td>47</td>
-<td>tests.EndToEndTest@5542c4ed</td></tr>
+<td>5</td>
+<td>tests.LoginTest@3b69e7d1</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
 <tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
@@ -140,17 +90,13 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='tests.LoginTest.loginTest()'><b>loginTest</b><br>Test class: tests.LoginTest</td>
-<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
-	at tests.LoginTest.loginTest(LoginTest.java:29)
+<td title='tests.EndToEndTest.fullFlowTest()'><b>fullFlowTest</b><br>Test class: tests.EndToEndTest</td>
+<td><div><pre>org.testng.SkipException: API rate limit
+	at tests.EndToEndTest.fullFlowTest(EndToEndTest.java:75)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1383031847", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1383031847'><pre>java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1590)
-	at org.testng.Assert.assertTrue(Assert.java:57)
-	at org.testng.Assert.assertTrue(Assert.java:67)
-	at tests.LoginTest.loginTest(LoginTest.java:29)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace943502798", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace943502798'><pre>org.testng.SkipException: API rate limit
+	at tests.EndToEndTest.fullFlowTest(EndToEndTest.java:75)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -178,20 +124,23 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
-<td>36</td>
-<td>tests.LoginTest@279fedbd</td></tr>
+<td>0</td>
+<td>tests.EndToEndTest@2a5c8d3f</td></tr>
 <tr>
-<td title='tests.LoginTest.loginTest()'><b>loginTest</b><br>Test class: tests.LoginTest</td>
-<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
-	at tests.LoginTest.loginTest(LoginTest.java:29)
+<td title='tests.EndToEndTest.fullFlowTest()'><b>fullFlowTest</b><br>Test class: tests.EndToEndTest</td>
+<td><div><pre>java.lang.AssertionError: expected [429] but found [200]
+	at tests.EndToEndTest.fullFlowTest(EndToEndTest.java:71)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace124351398", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace124351398'><pre>java.lang.AssertionError: expected [true] but found [false]
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1792113076", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1792113076'><pre>java.lang.AssertionError: expected [429] but found [200]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1590)
-	at org.testng.Assert.assertTrue(Assert.java:57)
-	at org.testng.Assert.assertTrue(Assert.java:67)
-	at tests.LoginTest.loginTest(LoginTest.java:29)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:1431)
+	at org.testng.Assert.assertEquals(Assert.java:1395)
+	at org.testng.Assert.assertEquals(Assert.java:1441)
+	at tests.EndToEndTest.fullFlowTest(EndToEndTest.java:71)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -219,8 +168,8 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
-<td>34</td>
-<td>tests.LoginTest@279fedbd</td></tr>
+<td>4</td>
+<td>tests.EndToEndTest@2a5c8d3f</td></tr>
 </table><p>
 </body>
 </html>
