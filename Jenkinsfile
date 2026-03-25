@@ -61,10 +61,17 @@ pipeline {
 
 
         // 3️⃣ Run tests inside Docker container
-        stage('Run Tests') {
-            steps {
+ stage('Run Tests') {
+ steps {
                 //bat "docker run --name %CONTAINER_NAME% %IMAGE_NAME%"
-                 bat "docker run rm --name %CONTAINER_NAME% jogendramahesh/automation-test"
+                // bat "docker run rm --name %CONTAINER_NAME% jogendramahesh/automation-test"
+bat """
+docker run ^
+--name %CONTAINER_NAME% ^
+--network advanced-automation-framework_default ^
+-e grid.url=http://selenium-hub:4444/wd/hub ^
+jogendramahesh/automation-test
+"""
             }
         }
 
