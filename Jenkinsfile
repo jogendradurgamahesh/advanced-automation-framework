@@ -52,6 +52,14 @@ pipeline {
             }
         }
 
+          // 🔥 ADD THIS STAGE HERE
+        stage('Cleanup Old Container') {
+            steps {
+                bat "docker rm -f %CONTAINER_NAME% || exit 0"
+            }
+        }
+
+
         // 3️⃣ Run tests inside Docker container
         stage('Run Tests') {
             steps {
