@@ -46,11 +46,11 @@ pipeline {
         }
 
         // 2️⃣ Build Docker image using Dockerfile
-        stage('Build Docker Image') {
-            steps {
-                bat "docker build -t %IMAGE_NAME% ."
-            }
-        }
+     //   stage('Build Docker Image') {
+       //     steps {
+         //       bat "docker build -t %IMAGE_NAME% ."
+           // }
+        //}
 
           // 🔥 ADD THIS STAGE HERE
         stage('Cleanup Old Container') {
