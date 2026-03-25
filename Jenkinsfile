@@ -74,15 +74,18 @@ pipeline {
         }
 
         // 6️⃣ Publish report in Jenkins
-        stage('Publish Report') {
-            steps {
-                publishHTML([
-                    reportDir: 'reports',
-                    reportFiles: 'ExtentReport.html',
-                    reportName: 'Automation Report'
-                ])
-            }
-        }
+       stage('Publish Report') {
+    steps {
+        publishHTML(target: [
+            reportDir: 'reports',
+            reportFiles: 'ExtentReport.html',
+            reportName: 'Automation Report',
+            keepAll: true,
+            alwaysLinkToLastBuild: true,
+            allowMissing: false
+        ])
+    }
+}
     }
 
     post {
