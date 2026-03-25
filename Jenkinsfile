@@ -64,7 +64,7 @@ pipeline {
         stage('Run Tests') {
             steps {
                 //bat "docker run --name %CONTAINER_NAME% %IMAGE_NAME%"
-                 bat "docker run --name %CONTAINER_NAME% jogendramahesh/automation-test"
+                 bat "docker run --rm --name %CONTAINER_NAME% jogendramahesh/automation-test"
             }
         }
 
